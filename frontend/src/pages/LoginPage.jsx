@@ -12,6 +12,11 @@ const LoginPage = () => {
   });
   const { login, isLoggingIn } = useAuthStore();
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    login(formData);
+  };
+  
   const testData = () => {
     setFormData({
       email: "Demo1234@gmail.com",
@@ -20,10 +25,6 @@ const LoginPage = () => {
     handleSubmit();
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    login(formData);
-  };
 
   return (
     <div className="h-screen grid lg:grid-cols-2">
