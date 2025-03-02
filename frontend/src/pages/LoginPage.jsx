@@ -22,6 +22,7 @@ const LoginPage = () => {
       email: "Demo1234@gmail.com",
       password: "Demo@1234",
     });
+    e.handleSubmit();
     login({
       email: "Demo1234@gmail.com",
       password: "Demo@1234",
