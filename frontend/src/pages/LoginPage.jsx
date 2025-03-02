@@ -12,6 +12,13 @@ const LoginPage = () => {
   });
   const { login, isLoggingIn } = useAuthStore();
 
+  const testData = () => {
+    setFormData({
+      email: "Demo-User",
+      password: "Demo@1234",
+    });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     login(formData);
@@ -103,6 +110,12 @@ const LoginPage = () => {
               <Link to="/signup" className="link link-primary">
                 Create account
               </Link>
+            </p>
+            <p className="text-base-content/60">
+              Login with a Demo User!{" "}
+              <button onClick={testData} className="link link-primary">
+                Create account
+              </button>
             </p>
           </div>
         </div>
