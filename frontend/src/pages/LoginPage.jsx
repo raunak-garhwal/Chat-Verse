@@ -17,7 +17,7 @@ const LoginPage = () => {
       login(formData);
     };
     
-  const testData = () => {
+  const testData = (e) => {
     setFormData({
       email: "Demo1234@gmail.com",
       password: "Demo@1234",
