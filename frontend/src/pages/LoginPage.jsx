@@ -22,7 +22,7 @@ const LoginPage = () => {
       email: "Demo1234@gmail.com",
       password: "Demo@1234",
     });
-    setTimeout(handleSubmit, 0);
+    setTimeout(() => handleSubmit({ preventDefault: () => {} }), 0);
   };
 
   return (
