@@ -17,8 +17,8 @@ const LoginPage = () => {
     await login(formData);
   };
 
-  const testData = () => {
-    setFormData({
+  const testData = async () => {
+    await setFormData({
       email: "Demo1234@gmail.com",
       password: "Demo@1234",
     });
