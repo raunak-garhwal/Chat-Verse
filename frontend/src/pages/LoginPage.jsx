@@ -14,7 +14,7 @@ const LoginPage = () => {
 
   const testData = () => {
     setFormData({
-      email: "Demo-User",
+      email: "Demo1234@gmail.com",
       password: "Demo@1234",
     });
   };
@@ -114,7 +114,7 @@ const LoginPage = () => {
             <p className="text-base-content/60">
               Login with a Demo User!{" "}
               <button onClick={testData} className="link link-primary">
-                Create account
+                Click here
               </button>
             </p>
           </div>
