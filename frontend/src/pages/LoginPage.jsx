@@ -17,6 +17,7 @@ const LoginPage = () => {
       email: "Demo1234@gmail.com",
       password: "Demo@1234",
     });
+    handleSubmit();
   };
 
   const handleSubmit = async (e) => {
