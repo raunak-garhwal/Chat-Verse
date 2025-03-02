@@ -12,13 +12,15 @@ const LoginPage = () => {
   });
   const { login, isLoggingIn } = useAuthStore();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    await login(formData);
+    if (formData.email && formData.password) {
+      login(formData);
+    }
   };
 
-  const testData = async () => {
-    await setFormData({
+  const testData = () => {
+    setFormData({
       email: "Demo1234@gmail.com",
       password: "Demo@1234",
     });
