@@ -16,15 +16,14 @@ const LoginPage = () => {
     e.preventDefault();
     login(formData);
   };
-  
+
   const testData = () => {
     setFormData({
       email: "Demo1234@gmail.com",
       password: "Demo@1234",
     });
-    handleSubmit();
+    setTimeout(handleSubmit, 0);
   };
-
 
   return (
     <div className="h-screen grid lg:grid-cols-2">
