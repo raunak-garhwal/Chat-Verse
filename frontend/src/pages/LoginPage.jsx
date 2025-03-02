@@ -14,17 +14,18 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.email && formData.password) {
       login(formData);
-    }
-  };
-
+    };
+    
   const testData = () => {
     setFormData({
       email: "Demo1234@gmail.com",
       password: "Demo@1234",
     });
-    setTimeout(() => handleSubmit({ preventDefault: () => {} }), 500);
+    login({
+      email: "Demo1234@gmail.com",
+      password: "Demo@1234",
+    });
   };
 
   return (
